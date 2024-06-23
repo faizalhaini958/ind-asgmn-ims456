@@ -1,0 +1,187 @@
+h1
+    {
+        color:brown;
+        font-family: Verdana;
+    }
+
+h2
+    {
+        color:cadetblue;
+    }
+
+h2.merah
+    {
+        color:red;
+    }
+
+body
+    {
+        background-color: burlywood;
+    }
+
+.logo
+    {
+        width: 25%;
+        height: 100px;
+        float:left;
+        background-color: darkkhaki;
+    }
+
+.menu
+    {
+        width: 75%;
+        height: 100px;
+        float:left;
+        background-color: darksalmon;
+    }
+
+.slider
+    {
+        width: 100%;
+        height: 500px;
+        float:left;
+        background-color: chocolate;
+    }
+
+table,tr,td,th
+    {
+        border:1px solid black;
+        border-collapse: collapse;
+        padding:5px;
+    }
+
+tr  
+    {
+        background-color: gainsboro;
+    }
+
+th
+    {
+        background-color: grey;
+        color:beige;
+    }
+
+tr:nth-child(odd)
+    {
+        background-color: ghostwhite;
+    }
+
+tr:hover
+    {
+        background-color: gold;
+    }
+
+nav
+    {
+        font-family: verdana;
+        padding-bottom:20px;
+        text-align:right;
+    }
+
+a 
+    {
+        text-decoration: none;
+        margin-right: 15px;
+    }
+
+/*slideshow*/
+
+*
+{
+    box-sizing: border-box;
+}
+
+.slideshow-container
+    {
+        max-width: 1000px;
+        position:relative;
+        margin:auto;
+    }
+
+.mySlides
+    {
+        display: none;
+    }
+
+/* prev & next button*/
+
+.prev, .next
+    {
+        cursor: pointer;
+        position: absolute;
+        top:50%;
+        width: auto;
+        padding: 15px;
+        margin-top: -20px;
+        color: white;
+        transform: 0.5s;
+        font-size: 20px;
+        font-weight: bold;
+        user-select: none;
+        border-radius: 0 3px 3px 0;
+    }
+
+/* positioning next button to the right */
+
+.next
+    {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+.prev:hover, next:hover
+    {
+        background-color: black;
+    }
+
+/*dots or bullet*/
+
+.dot 
+    {
+        cursor: pointer;
+        background-color: black;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        display: inline-block;
+        transition: background-color 0.5s ease;
+    }
+
+/*caption text*/
+
+.text
+    {
+        color:aliceblue;
+        font-size: 16px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding:10px 12px;
+    }
+
+/*slide number*/
+.numbertext
+    {
+        color:gold;
+        font-size: 12px;
+        padding: 10px 12px;
+        position: absolute;
+        top:0;
+    }
+
+.active, dot:hover
+    {
+        background-color: darkgray;
+    }
+
+.fade
+    {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+@keyframes fade
+    {
+        from {opacity:.4}
+        to {opacity:1}
+    }
